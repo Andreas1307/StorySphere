@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorySphere</title>
+    <link rel="icon" href="img/small-icon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <img src="img/logo2.png" alt="">
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <span>
+            <a class="triggerCollap">Ebooks</a>
+            <div class="collapDiv">
+             <a href="ebooks.html">All Ebooks</a>
+             <a href="ownedEbooks.html">Owned Ebooks</a>
+            </div>
+          </span>
+          
+          <a class="active" href="account.html">Account</a>
+          <a href="purchased.html">Cart</a>
+          <i id="closeCollapBtn" class="fa-solid fa-xmark"></i>
+      </div>
+      <span class="collapBtn"><i class="fa-solid fa-bars"></i></span>
+    </nav>
+
+
+
+
+    <header class="account-header">
+      <div class="header-content">
+          <h1>Welcome Back,<span class="welcome"> John Doe</span>!</h1>
+          <p>Your personalized dashboard for managing your account and purchases. <br><span>(You can press the logIn btn and Sign Up and set all your info)</span></p>
+          <button class="showAccount">LogIn/SignUp</button>     
+        </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="account-content">
+      <section class="profile-section">
+          <div class="profile-card">
+              <img src="img/person.png" alt="User Avatar" class="profile-avatar">
+              <div class="profile-details">
+                  <h2 class="welcome-acc">John Doe</h2>
+                  <p class="email">Email: johndoe@example.com</p>
+                  <p>Member Since: <span class="memberSince"> January 2022</span></p>
+                  <button class="btn edit-profile-btn"><i class="fa-solid fa-user-edit"></i> Edit Profile</button>
+              </div>
+          </div>
+      </section>
+
+      <!-- Navigation Tabs -->
+      <div class="tabs">
+          <button class="tab-button active" data-tab="reading-progress"><i class="fa-solid fa-chart-line"></i></i> Progress</button>
+          <button class="tab-button" data-tab="wishlist"><i class="fa-solid fa-heart"></i> Favorites</button>
+          <button class="tab-button" data-tab="settings"><i class="fa-solid fa-cog"></i> Settings</button>
+      </div>
+
+      <!-- Reading Progress -->
+      <section class="tab-content active" id="reading-progress">
+        <h2>Books You Read</h2>
+        <div class="progress-list">
+            <h5>You have not started reading any books yet</h5>
+        </div>
+    </section>
+
+      <!-- Wishlist -->
+      <section class="tab-content" id="wishlist">
+          <h2>Your Favorites</h2>
+          <div class="wishlist-list">
+              
+          </div>
+      </section>
+
+      <section class="tab-content" id="settings">
+          <h2>Account Settings</h2>
+          <ul class="settings-list">
+              <li><button class="changePassBtn btn settings-btn"><i class="fa-solid fa-key"></i> Change Password</button>
+                <input type="text" placeholder="Enter new and press enter" class="changePassword">
+            </li>
+              <li><button class="btn settings-btn"><i class="fa-solid fa-credit-card"></i> Payment Methods</button></li>
+              <li><button class="btn settings-btn"><i class="fa-solid fa-envelope"></i> Notifications</button></li>
+              <li><button class="btn logout-btn"><i class="fa-solid fa-sign-out-alt"></i> Log Out</button></li>
+          </ul>
+      </section>
+  </main>
+
+
+
+  <footer class="account-footer">
+    <p>© 2024 Ebook Store. All Rights Reserved.</p>
+    <div class="footer-links">
+        <a href="#">Help Center</a>
+        <a href="#">Contact Support</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    const tabs = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            tab.classList.add('active');
+            document.getElementById(tab.dataset.tab).classList.add('active');
+        });
+    });
+</script>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <img src="img/logo2.png" alt="Dukaken Logo" class="footer-logo" />
+            <p>You think water moves fast, you should see ice. Ice moves like it has a mind made up. It knows it killed the world once and got a taste for murdering. You should see ice.</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h2>Get in Touch</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 322 Aqua Blue Road St, Santa Rosa, CA, USA</p>
+            <p><i class="fas fa-envelope"></i> admin@storysphere.com</p>
+            <p><i class="fas fa-phone"></i> 002 - 0100348812</p>
+          </div>
+      
+          <div class="footer-section">
+            <h2>Newsletter</h2>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email address here" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+
+
+
+        <div class="notification">
+         
+        </div>
+
+        <div class="error">
+
+        </div>
+
+
+
+        <div class="account-div">
+            <span class="closeAccount"><i class="fa-solid fa-xmark"></i></span>
+            <div class="signIn active">
+                <h2>Log In <span>(If visiting just press on the button)</span></h2>
+                <p>Username</p>
+                <input type="text">
+                <p>Password</p>
+                <input type="password">
+                <button class="logIn">Log In</button>
+                <a class="create-acc">Don't have an account? <u>Create one now</u></a>
+            </div>
+
+            <div class="signUp">
+                <h2>Sign Up</h2>
+                <p>Name</p>
+                <input type="text" class="nameInput">
+                <p>Email</p>
+                <input type="email" class="emailInput">
+                <p>Password</p>
+                <input type="password" class="passwordInput">
+                <button class="signUpBtn">Sign Up</button>
+                <a class="logIn-acc">Already have an account? <u>Log in now</u></a>
+            </div>
+        </div>
+
+    
+      
+
+    <script src="https://kit.fontawesome.com/17d8cf32ce.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

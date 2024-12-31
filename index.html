@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorySphere</title>
+    <link rel="icon" href="img/small-icon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <img src="img/logo2.png" alt="">
+        <div class="menu">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <span>
+            <a class="triggerCollap">Ebooks</a>
+            <div class="collapDiv">
+             <a href="ebooks.html">All Ebooks</a>
+             <a href="ownedEbooks.html">Owned Ebooks</a>
+            </div>
+          </span>
+          
+          <a href="account.html">Account</a>
+          <a href="purchased.html">Cart</a>
+          <i id="closeCollapBtn" class="fa-solid fa-xmark"></i>
+      </div>
+      <span class="collapBtn"><i class="fa-solid fa-bars"></i></span>
+    </nav>
+    <div class="homepage">
+        <div class="box">
+           <div class="ebookHP">
+            <h2>Your One-Stop Shop for Digital Stories</h2>
+            <h1>Discover Stories That Inspire,<br> Educate, and Entertain</h1>
+            <p>At StorySphere, we bring the world’s best eBooks to your fingertips. From gripping thrillers to insightful self-help guides, we have something for every reader. Start your journey today and never run out of stories to explore!</p>
+            <a href="#popularB">Start Reading Today</a>
+        </div>
+        <div class="hpLogo">
+            <img draggable="false" src="img/logo.png" alt="">
+        </div> 
+        </div>
+        
+    </div>
+    <div class="featured-books">
+        <div class="box">
+            <h1>Featured Books</h1>
+        <div class="fBooks"></div>
+        </div>
+        
+    </div>
+
+
+    <div class="banner">
+        <div class="banner-box">
+             <div>
+            <img src="img/cart-icon.png" alt="">
+            <span>
+            <h2>Unlimited Shipping</h2>
+            <p>For any product</p>
+        </span>
+        </div>
+        <div>
+            <img src="img/book-icon.png" alt="">
+            <span>
+            <h2>30 Days Return</h2>
+            <p>For ebook issues</p>
+        </span>
+        </div>
+        <div>
+            <img src="img/wallet-icon.png" alt="">
+            <span>
+            <h2>Secured Payments</h2>
+            <p>100% Secure & Safe</p>
+        </span>
+        </div>
+        <div>
+            <img src="img/phone-icon.png" alt="">
+            <span>
+            <h2>24/7 Support</h2>
+            <p>Dedicated support</p>
+        </span>
+        </div>
+        </div>
+       
+    </div>
+
+    <div id="popularB" class="popular-books">
+        <div class="popular-book">
+            <h2><span>MOST</span><br> Popular Books</h2>
+        <div class="popular">
+
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="best-book">
+        <div class="bBook">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="customer-reviews" class="reviews-section">
+        <h2>What Our Readers Say</h2>
+        <div class="reviews-container">
+          <div class="review-card">
+            <img src="img/user1.png" alt="User Image" class="user-img" />
+            <p class="review-text">"This platform has redefined how I find my next favorite book. The collection is vast, and the recommendations are spot on. It’s easy to discover hidden gems and stay up-to-date with trending"</p>
+            <div class="review-rating">★★★★★</div>
+            <span class="reviewer-name">- Mathilda Roe</span>
+          </div>
+          <div class="review-card">
+            <img src="img/user2.png" alt="User Image" class="user-img" />
+            <p class="review-text">""I’ve fallen in love with reading all over again, thanks to this platform. The intuitive design, amazing book selections, and helpful reviews make every visit enjoyable. It’s my go-to for finding the perfect story!"</p>
+            <div class="review-rating">★★★★★</div>
+            <span class="reviewer-name">- John Doe</span>
+          </div>
+          
+        </div>
+    </div>
+
+
+
+
+
+
+      <div class="subscription">
+        <h2>Choose Your Plan</h2>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <h3>Basic Plan</h3>
+            <p class="text-danger">$9.99/month</p>
+            <span><i class="fa-regular fa-circle-check"></i>Access to 5 eBooks per month</span>
+            <span><i class="fa-regular fa-circle-check"></i>Standard reading interface</span>
+            <span><i class="fa-regular fa-circle-check"></i>Limited recommendations</span>
+            <span><i class="fa-regular fa-circle-check"></i>No offline reading</span>
+            <span><i class="fa-regular fa-circle-check"></i>Access to public domain and free books</span>
+            <span><i class="fa-regular fa-circle-check"></i>Basic customer support</span>
+          </div>
+          <div class="pricing-card">
+            <h3>Premium plan</h3>
+            <p class="text-danger">$19.99/month</p>
+            <span><i class="fa-regular fa-circle-check"></i>Unlimited eBook access</span>
+            <span><i class="fa-regular fa-circle-check"></i>Enhanced reading interface with font and theme customization</span>
+            <span><i class="fa-regular fa-circle-check"></i>AI-powered personalized book recommendations</span>
+            <span><i class="fa-regular fa-circle-check"></i>Offline reading on up to 2 devices</span>
+            <span><i class="fa-regular fa-circle-check"></i>Early access to new releases</span>
+            <span><i class="fa-regular fa-circle-check"></i>Access to Premium-only book categories</span>
+            <span><i class="fa-regular fa-circle-check"></i>Priority customer support</span>
+            <span><i class="fa-regular fa-circle-check"></i>Bookmark synchronization across devices</span>
+          </div>
+          <div class="pricing-card">
+            <h3>Elite Plan</h3>
+            <p class="text-danger">$29.99/month</p>
+            <span><i class="fa-regular fa-circle-check"></i>Unlimited eBook and audiobook access</span>
+            <span><i class="fa-regular fa-circle-check"></i>Priority access to new releases and exclusive content</span>
+            <span><i class="fa-regular fa-circle-check"></i>Personalized recommendations based on mood and reading history</span>
+            <span><i class="fa-regular fa-circle-check"></i>Offline reading on unlimited devices</span>
+            <span><i class="fa-regular fa-circle-check"></i>Monthly curated book club invites and discussion groups</span>
+            <span><i class="fa-regular fa-circle-check"></i>Access to author Q&A sessions and live webinars</span>
+            <span><i class="fa-regular fa-circle-check"></i>Free access to one premium audiobook each month</span>
+            <span><i class="fa-regular fa-circle-check"></i>Dedicated personal account manager for support</span>
+            <span><i class="fa-regular fa-circle-check"></i>Exclusive discounts on partner products</span>
+          </div>
+        </div>
+        <button class="compareBtn btn btn-deafult">Not sure what plan to pick? <u>Compare</u> plans</button>
+      </div>
+
+
+      
+      
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <img src="img/logo2.png" alt="Dukaken Logo" class="footer-logo" />
+            <p>You think water moves fast, you should see ice. Ice moves like it has a mind made up. It knows it killed the world once and got a taste for murdering. You should see ice.</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h2>Get in Touch</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 322 Aqua Blue Road St, Santa Rosa, CA, USA</p>
+            <p><i class="fas fa-envelope"></i> admin@storysphere.com</p>
+            <p><i class="fas fa-phone"></i> 002 - 0100348812</p>
+          </div>
+      
+          <div class="footer-section">
+            <h2>Newsletter</h2>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email address here" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      
+
+        <div class="notification">
+         
+        </div>
+        <div class="error">
+            
+        </div>
+
+
+
+    <script src="https://kit.fontawesome.com/17d8cf32ce.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
